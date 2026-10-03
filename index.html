@@ -88,6 +88,7 @@
                 position: sticky !important;
                 top: 0;
                 height: 100vh;
+                z-index: 1000;
             }
         }
 
@@ -125,7 +126,7 @@
 <body>
 
 <!-- Mobile Header (Visible on mobile/tablet screens < 768px) -->
-<nav class="navbar d-md-none bg-sidebar sticky-top shadow-sm px-3 py-2 z-3">
+<nav class="navbar d-md-none bg-sidebar sticky-top shadow-sm px-3 py-2">
     <div class="container-fluid p-0 d-flex justify-content-between align-items-center">
         <a class="navbar-brand text-white d-flex align-items-center gap-2 m-0 text-decoration-none" href="#">
             <img src="https://ui-avatars.com/api/?name=Umer+Hashmi&background=ff4a5a&color=fff&size=80" alt="Syed Umer" width="36" height="36" class="rounded-circle border border-2 border-white shadow-sm">
@@ -144,7 +145,7 @@
     <div class="row">
         
         <!-- Sidebar (Offcanvas on Mobile, Sticky on Desktop) -->
-        <div class="offcanvas-md offcanvas-start col-md-3 col-xl-2 p-0 bg-sidebar text-white sidebar-desktop overflow-y-auto sidebar-scroll d-flex flex-column shadow-lg z-3" id="sidebarMenu" tabindex="-1" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-md offcanvas-start col-md-3 col-xl-2 p-0 bg-sidebar text-white sidebar-desktop overflow-y-auto sidebar-scroll d-flex flex-column shadow-lg" id="sidebarMenu" tabindex="-1" aria-labelledby="sidebarMenuLabel">
             
             <!-- Mobile Offcanvas Header -->
             <div class="d-flex d-md-none justify-content-between align-items-center p-3 border-bottom border-secondary border-opacity-25">
